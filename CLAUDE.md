@@ -130,7 +130,9 @@ The `index.html` file implements a comprehensive single-page landing page based 
 
 ### Key Features:
 - **WhatsApp Integration:** On form submission, a personalized WhatsApp message is sent to `923108037950` with collected agency details.
-- **High-End Aesthetics:** Utilizes a specified color palette, premium typography, and advanced CSS effects like mouse-follow glows and floating particles.
+- **High-End Aesthetics:** Site-wide fixed particle background, gold accent color palette, and premium typography.
+- **Advanced Interactivity:** Interactive ROI counters, 3D tilt cards, and a sophisticated tabbed FAQ system.
+- **SEO Optimization:** Professional-grade meta descriptions, Open Graph previews, and JSON-LD structured data.
 
 IMPORTANT RULES:
 - Use Tailwind CDN only — no npm
@@ -138,3 +140,4 @@ IMPORTANT RULES:
 - No placeholder image services — use CSS gradients for property images
 - Code must be production-ready, clean, commented
 - Single HTML file, everything inline
+- Maintain site-wide fixed background continuity
