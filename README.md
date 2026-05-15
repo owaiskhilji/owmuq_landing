@@ -43,4 +43,4 @@ A premium, high-converting single-page landing page designed for real estate age
 - **Trust Signals:** Success rate metrics, process transparency, and service guarantees.
 
 ---
-© 2025 Owmuq - AI Real Estate Automation. All Rights Reserved.
+© 2025 Owmuq - AI Real Estate Automation. All Rights Reserve
