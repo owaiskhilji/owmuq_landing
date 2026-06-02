@@ -1,14 +1,21 @@
-# Owmuq - AI Real Estate Lead Automation Landing Page
+# Khilji Labs - AI Real Estate Lead Automation Landing Page
 
 A premium, high-converting single-page landing page designed for real estate agencies in Pakistan and the UAE. Built with a luxury aesthetic, advanced animations, and a mobile-first responsive design.
 
 ## 🚀 Live Preview
-- **URL:** [https://owmuq.com/](https://owmuq.com/)
-- **Core Focus:** WhatsApp Lead Qualification & CRM Automation
+- **URL:** [https://khiljilabs.com/](https://khiljilabs.com/)
+- **Core Focus:** AI-Driven Real Estate Lead Qualification & CRM Automation
+
+## 🛠 Services
+- **Automated Lead Qualification:** AI-powered agents that qualify leads 24/7 via WhatsApp.
+- **CRM Integration:** Seamless synchronization of qualified leads directly into your CRM.
+- **Custom AI Automation:** Tailored workflows to handle appointment scheduling, follow-ups, and property inquiries.
+- **Data-Driven Insights:** Real-time analytics on lead performance and conversion rates.
 
 ## 🛠 Tech Stack
 - **Structure:** HTML5 (Semantic & SEO Optimized)
 - **Styling:** Tailwind CSS (via CDN) + Custom Vanilla CSS
+- **Branding:** Custom premium 'KL' SVG monogram, gold gradient theme, and high-visibility navbar design.
 - **Animations:**
   - **AOS (Animate On Scroll):** for entry transitions
   - **Vanta.js (Fog):** for interactive 3D hero background
@@ -18,6 +25,7 @@ A premium, high-converting single-page landing page designed for real estate age
 - **Fonts:** Playfair Display (Luxury Serif) & DM Sans (Modern Sans-serif)
 
 ## ✨ Key Features
+- **Premium Branding:** Enhanced navbar logo, footer icon, and browser favicon using a custom gold-gradient monogram.
 - **WhatsApp Integration:** Lead capture form automatically formats and sends lead data to WhatsApp.
 - **Fixed Particle Background:** Site-wide fixed backdrop for a unified, cinematic feel.
 - **Dynamic Counters:** ROI and performance stats animate upon scrolling into view.
@@ -33,7 +41,7 @@ A premium, high-converting single-page landing page designed for real estate age
 ## 🎨 Color Palette
 - **Deep Navy:** `#0A0F1E` (Primary Background)
 - **Secondary Navy:** `#0D1528`
-- **Accent Gold:** `#C9A84C`
+- **Accent Gold:** `#C9A84C` (Used in new monogram & text gradients)
 - **Light Gold:** `#F0D080`
 - **Card Background:** `#111827`
 
@@ -43,4 +51,4 @@ A premium, high-converting single-page landing page designed for real estate age
 - **Trust Signals:** Success rate metrics, process transparency, and service guarantees.
 
 ---
-© 2025 Owmuq - AI Real Estate Automation. All Rights Reserve
+© 2025 Khilji Labs - AI Real Estate Automation. All Rights Reserved.
