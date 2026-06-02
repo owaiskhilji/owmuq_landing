@@ -3,7 +3,7 @@
 A premium, high-converting single-page landing page designed for real estate agencies in Pakistan and the UAE. Built with a luxury aesthetic, advanced animations, and a mobile-first responsive design.
 
 ## 🚀 Live Preview
-- **URL:** [https://khiljilabs.com/](https://khiljilabs.com/)
+- **URL:** [https://khiljilabs.vercel.app/](https://khiljilabs.vercel.app/)
 - **Core Focus:** AI-Driven Real Estate Lead Qualification & CRM Automation
 
 ## 🛠 Services
