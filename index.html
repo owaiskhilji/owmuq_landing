@@ -2787,7 +2787,22 @@
             margin: 0;
             transition: color 0.3s ease;
         }
-        .faq-item.open .faq-answer p {
+        .faq-answer ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            padding-bottom: 24px;
+            margin: 0;
+        }
+        .faq-answer li {
+            font-family: "DM Sans", sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 8px;
+            transition: color 0.3s ease;
+        }
+        .faq-item.open .faq-answer p,
+        .faq-item.open .faq-answer li {
             color: rgba(6,11,20,0.85);
             font-weight: 500;
         }
@@ -3919,7 +3934,22 @@
                                     <span class="faq-icon">+</span>
                                 </button>
                                 <div class="faq-answer" aria-hidden="true">
-                                    <p>24–48 hours from payment confirmation. We handle everything — WhatsApp Business API connection, AI training on your property listings, Facebook Ads integration, and CRM setup. Zero technical work required from your team.</p>
+                                    <p>The deployment timeline depends entirely on the modules you select for your agency or development project:</p>
+                                    <ul>
+                                        <li>
+                                            Web Development (Property Websites/Landing Pages): Takes 3 to 5 business days to design, code, and launch.
+                                        </li>
+                                        <li>
+                                            Standard CRM Setup (Lead Tracking & Sales Pipeline): Takes 7 to 10 business days from payment confirmation.
+                                        </li>
+                                        <li>
+                                            AI & Automation Engine (WhatsApp Integration & Lead Qualification Bots): Takes an additional 3 to 4 business days for LLM fine-tuning and workflow training.
+                                        </li>
+                                        <li>
+                                            Full-Scale Enterprise ERP (Installment Ledgers & Interactive Property Maps): Deployment takes 14 to 21 business days due to complex financial structures.
+                                        </li>
+                                    </ul>
+                                    <p class="faq-answer-note" style="margin-top: 15px; font-style: italic;">Note: For all systems, we build a secure, isolated database and dedicated server instance for each client to ensure maximum data privacy.</p>
                                 </div>
                             </div>
                             <div class="faq-item">
@@ -3933,7 +3963,7 @@
                                     <span class="faq-icon">+</span>
                                 </button>
                                 <div class="faq-answer" aria-hidden="true">
-                                    <p>Just two things — a WhatsApp Business number and access to your Facebook Ads account. We handle all the technical configuration.</p>
+                                    <p>To begin, we require your brand assets (logo, domain preferences), your current property inventory sheet (Excel/CSV), and access to your lead generation platforms (like Facebook Business Manager or Zameen.com). Our team will handle 100% of the ingestion and mapping work—zero technical effort is required from your side</p>
                                 </div>
                             </div>
                             <div class="faq-item">
@@ -3943,11 +3973,11 @@
                                             <path d="M12 2C6.48 2 2 5.91 2 10.74c0 2.76 1.48 5.2 3.8 6.77L5 22l4.87-2.61A11.02 11.02 0 0012 19.48c5.52 0 10-3.91 10-8.74S17.52 2 12 2zm1 13h-2v-2h2v2zm0-3.5c0 .83-.67 1.5-1.5 1.5h-1v-1.5c0-1.1.9-2 2-2 .55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1h-2c0-1.66 1.34-3 3-3s3 1.34 3 3c0 1.1-.9 2-2 2z"/>
                                         </svg>
                                     </div>
-                                    <span class="faq-q-text">Will the AI sound like a real agent?</span>
+                                    <span class="faq-q-text">How do you handle data migration from my existing system or Excel sheets?</span>
                                     <span class="faq-icon">+</span>
                                 </button>
                                 <div class="faq-answer" aria-hidden="true">
-                                    <p>Yes. We train the AI using your agency's tone, property details, and common buyer questions. Clients often cannot tell it's automated.</p>
+                                    <p>We provide full data migration support. Whether your data is scattered across physical registers, WhatsApp logs, or complex Excel sheets, we clean, format, and securely parse it directly into your new dedicated PostgreSQL database. Your historical records remain 100% intact and searchable from day one.</p>
                                 </div>
                             </div>
                             <div class="faq-item">
@@ -3957,11 +3987,11 @@
                                             <path d="M12 2C6.48 2 2 5.91 2 10.74c0 2.76 1.48 5.2 3.8 6.77L5 22l4.87-2.61A11.02 11.02 0 0012 19.48c5.52 0 10-3.91 10-8.74S17.52 2 12 2zm1 13h-2v-2h2v2zm0-3.5c0 .83-.67 1.5-1.5 1.5h-1v-1.5c0-1.1.9-2 2-2 .55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1h-2c0-1.66 1.34-3 3-3s3 1.34 3 3c0 1.1-.9 2-2 2z"/>
                                         </svg>
                                     </div>
-                                    <span class="faq-q-text">Can I test it before going live?</span>
+                                    <span class="faq-q-text">Do I need to install any software or buy expensive hardware?</span>
                                     <span class="faq-icon">+</span>
                                 </button>
                                 <div class="faq-answer" aria-hidden="true">
-                                    <p>Yes. We run a sandbox test with your actual listings before activation. You approve the AI's responses before it goes live with real leads.</p>
+                                    <p>No installation required. The entire platform is a secure, cloud-based web application optimized for both desktop and mobile viewports. Your management team and active sales agents can access their designated dashboards securely from any smartphone, laptop, or tablet with an active internet connection</p>
                                 </div>
                             </div>
                             <div class="faq-item">
@@ -3971,11 +4001,11 @@
                                             <path d="M12 2C6.48 2 2 5.91 2 10.74c0 2.76 1.48 5.2 3.8 6.77L5 22l4.87-2.61A11.02 11.02 0 0012 19.48c5.52 0 10-3.91 10-8.74S17.52 2 12 2zm1 13h-2v-2h2v2zm0-3.5c0 .83-.67 1.5-1.5 1.5h-1v-1.5c0-1.1.9-2 2-2 .55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1h-2c0-1.66 1.34-3 3-3s3 1.34 3 3c0 1.1-.9 2-2 2z"/>
                                         </svg>
                                     </div>
-                                    <span class="faq-q-text">Do I need to install any software?</span>
+                                    <span class="faq-q-text">Will our team receive training on how to use the CRM/ERP system?</span>
                                     <span class="faq-icon">+</span>
                                 </button>
                                 <div class="faq-answer" aria-hidden="true">
-                                    <p>No installation required. Everything runs through WhatsApp Business API and your existing Facebook Ads account.</p>
+                                    <p>Yes, absolutely. Once your dedicated instance is live and deployed, we conduct complete hands-on training sessions for both your administrative management and frontline sales agents. We also provide clear documentation so your staff can easily navigate and log properties without friction</p>
                                 </div>
                             </div>
                         </div>
@@ -4141,7 +4171,7 @@
                                     <span class="faq-icon">+</span>
                                 </button>
                                 <div class="faq-answer" aria-hidden="true">
-                                    <p>Dedicated WhatsApp support line, email, and monthly check-in calls. Response time is under 2 hours during business hours.</p>
+                                    <p>We provide a dedicated WhatsApp support line, direct email access, and scheduled monthly check-in calls. Under your monthly maintenance agreement, our response time is under 2 hours during standard business hours for general technical queries.</p>
                                 </div>
                             </div>
                             <div class="faq-item">
@@ -4155,7 +4185,7 @@
                                     <span class="faq-icon">+</span>
                                 </button>
                                 <div class="faq-answer" aria-hidden="true">
-                                    <p>Yes. We provide a 1-hour onboarding session via video call. Your team will know exactly how to monitor leads and override the AI when needed.</p>
+                                    <p>Yes, absolutely. On-boarding includes complete hands-on training for your administrators, sales managers, and frontline field agents. We ensure everyone knows how to log leads, check the property grid, and handle updates before the system goes fully live.</p>
                                 </div>
                             </div>
                             <div class="faq-item">
@@ -4165,11 +4195,11 @@
                                             <path d="M12 2C6.48 2 2 5.91 2 10.74c0 2.76 1.48 5.2 3.8 6.77L5 22l4.87-2.61A11.02 11.02 0 0012 19.48c5.52 0 10-3.91 10-8.74S17.52 2 12 2zm1 13h-2v-2h2v2zm0-3.5c0 .83-.67 1.5-1.5 1.5h-1v-1.5c0-1.1.9-2 2-2 .55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1h-2c0-1.66 1.34-3 3-3s3 1.34 3 3c0 1.1-.9 2-2 2z"/>
                                         </svg>
                                     </div>
-                                    <span class="faq-q-text">What if the AI gives a wrong answer to a client?</span>
+                                    <span class="faq-q-text">What if the AI gives a wrong answer or hallucinates with a client?</span>
                                     <span class="faq-icon">+</span>
                                 </button>
                                 <div class="faq-answer" aria-hidden="true">
-                                    <p>You receive a real-time alert. You can take over the conversation instantly from the dashboard. All AI responses can be reviewed and edited.</p>
+                                    <p>Our AI architecture operates on strict contextual boundaries. However, if an unusual query triggers an inaccurate response, agents can immediately intervene, take over the chat manually via the CRM dashboard, and flag the conversation. We refine the underlying LLM logic during your monthly system maintenance to prevent reoccurrence.</p>
                                 </div>
                             </div>
                             <div class="faq-item">
@@ -4179,11 +4209,11 @@
                                             <path d="M12 2C6.48 2 2 5.91 2 10.74c0 2.76 1.48 5.2 3.8 6.77L5 22l4.87-2.61A11.02 11.02 0 0012 19.48c5.52 0 10-3.91 10-8.74S17.52 2 12 2zm1 13h-2v-2h2v2zm0-3.5c0 .83-.67 1.5-1.5 1.5h-1v-1.5c0-1.1.9-2 2-2 .55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1h-2c0-1.66 1.34-3 3-3s3 1.34 3 3c0 1.1-.9 2-2 2z"/>
                                         </svg>
                                     </div>
-                                    <span class="faq-q-text">How do I update my property listings in the AI?</span>
+                                    <span class="faq-q-text">How do I update my property listings or prices in the system?</span>
                                     <span class="faq-icon">+</span>
                                 </button>
                                 <div class="faq-answer" aria-hidden="true">
-                                    <p>Send us your updated listings via WhatsApp or email. We update the AI within 24 hours.</p>
+                                    <p>You can update your inventory in real-time directly through your secure admin dashboard. For bulk modifications, the system features a seamless Excel/CSV import tool, allowing you to overwrite or update hundreds of files, plot numbers, or installment metrics in a single click</p>
                                 </div>
                             </div>
                             <div class="faq-item">
@@ -4193,11 +4223,11 @@
                                             <path d="M12 2C6.48 2 2 5.91 2 10.74c0 2.76 1.48 5.2 3.8 6.77L5 22l4.87-2.61A11.02 11.02 0 0012 19.48c5.52 0 10-3.91 10-8.74S17.52 2 12 2zm1 13h-2v-2h2v2zm0-3.5c0 .83-.67 1.5-1.5 1.5h-1v-1.5c0-1.1.9-2 2-2 .55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1h-2c0-1.66 1.34-3 3-3s3 1.34 3 3c0 1.1-.9 2-2 2z"/>
                                         </svg>
                                     </div>
-                                    <span class="faq-q-text">What is the SLA for critical issues?</span>
+                                    <span class="faq-q-text">What is the SLA (Service Level Agreement) for critical issues?</span>
                                     <span class="faq-icon">+</span>
                                 </button>
                                 <div class="faq-answer" aria-hidden="true">
-                                    <p>Critical issues (AI not responding) are resolved within 4 hours. We also proactively monitor your system 24/7.</p>
+                                    <p>For critical tier-1 issues (such as server downtime, system-wide database access failure, or booking grid lockouts), we provide an immediate emergency response within 15 to 30 minutes. Our priority is to ensure your real estate operations and lead capturing mechanisms never experience disruption.</p>
                                 </div>
                             </div>
                         </div>
