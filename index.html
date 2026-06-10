@@ -4419,12 +4419,7 @@
     <link rel="stylesheet" href="./style.css">
 
     <!-- Animation Libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js" defer></script>
-
-
-    <script>
+<script>
         // Navbar Scroll Effect
         window.addEventListener('scroll', () => {
             const nav = document.getElementById('navbar');
@@ -5049,31 +5044,7 @@ Please analyze my agency for WhatsApp AI automation!`;
                 });
             }
 
-            // Initialize Vanta.js FOG Effect
-            if (window.innerWidth >= 768 && typeof VANTA !== 'undefined') {
-                VANTA.FOG({
-                    el: "#vanta-canvas",
-                    mouseControls: true,
-                    touchControls: true,
-                    gyroControls: false,
-                    minHeight: 200.00,
-                    minWidth: 200.00,
-                    highlightColor: 0x1e3a8a,
-                    midtoneColor: 0x0a0f1e,
-                    lowlightColor: 0x0a0f1e,
-                    baseColor: 0x050505,
-                    blurFactor: 0.60,
-                    speed: 1.50,
-                    zoom: 1.00
-                });
-            } else {
-                // Mobile fallback: static deep navy background to prevent layout shift and save CPU
-                const vantaCanvas = document.getElementById('vanta-canvas');
-                if (vantaCanvas) {
-                    vantaCanvas.style.background = '#0A0F1E';
-                }
-            }
-
+            // Vanta.js is now initialized dynamically via initVantaBackground() at the end of the file
             // Apply 3D Tilt Effect to major cards
             if(typeof VanillaTilt !== 'undefined') {
                 VanillaTilt.init(document.querySelectorAll(".contact-card, .engine-panel, .roi-panel-left, .roi-panel-right, .card-premium, .phone-outer, .step-icon, .faq-item"), {
@@ -5186,11 +5157,43 @@ Please analyze my agency for WhatsApp AI automation!`;
             document.head.appendChild(style);
         });
     </script>
+    <script>
+      if (window.innerWidth >= 768) {
+        // 1. Load Three.js first
+        const threeScript = document.createElement('script');
+        threeScript.src = "https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js";
+        threeScript.defer = true;
+        
+        threeScript.onload = () => {
+          // 2. Once Three.js is ready, load Vanta Fog
+          const vantaScript = document.createElement('script');
+          vantaScript.src = "https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js";
+          vantaScript.defer = true;
+          
+          vantaScript.onload = () => {
+            // 3. Both libraries loaded, now safely initialize the smoke effect
+            VANTA.FOG({
+              el: "#vanta-canvas",
+              mouseControls: true,
+              touchControls: false,
+              gyroControls: false,
+              minHeight: 200.00,
+              minWidth: 200.00,
+              highlightColor: 0xc9a84c,
+              midColor: 0x0d1528,
+              lowColor: 0x0a0f1e,
+              baseColor: 0x0a0f1e,
+              blurFactor: 0.6,
+              speed: 1.5
+            });
+          };
+          document.body.appendChild(vantaScript);
+        };
+        document.body.appendChild(threeScript);
+      } else {
+        // Mobile strict fallback: Clean static background, no scripts downloaded
+        const hero = document.querySelector('#vanta-canvas');
+        if (hero) hero.style.background = '#0A0F1E';
+      }
+    </script>
 </body>
-
-
-</html>  
-
-
-
-
