@@ -1,0 +1,24 @@
+{
+  "name": "real",
+  "version": "1.0.0",
+  "description": "A premium, high-converting single-page landing page designed for real estate agencies in Pakistan and the UAE. Built with a luxury aesthetic, advanced animations, and a mobile-first responsive design.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owaiskhilji/owmuq_landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/owaiskhilji/owmuq_landing/issues"
+  },
+  "homepage": "https://github.com/owaiskhilji/owmuq_landing#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
