@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://khiljilabs.vercel.app/sitemap.xml
